@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Runtime.CompilerServices;
 using Hangfire.SqlServer;
 
+[assembly: InternalsVisibleTo("HangFire.Azure.ServiceBusQueue.Tests")]
 namespace Hangfire.Azure.ServiceBusQueue
 {
     using Hangfire.Logging;
